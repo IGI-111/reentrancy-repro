@@ -1,0 +1,15 @@
+[package]
+name = "foobar"
+version = "0.1.0"
+edition = "2021"
+authors = ["IGI-111 <igi-111@protonmail.com>"]
+license = "Apache-2.0"
+
+[dev-dependencies]
+fuels = { version = "0.57", features = ["fuel-core-lib"] }
+tokio = { version = "1.34", features = ["rt", "macros"] }
+
+[[test]]
+harness = true
+name = "integration_tests"
+path = "tests/harness.rs"
